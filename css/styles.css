@@ -440,6 +440,7 @@ img {
 }
 
 .exsamples-item {
+    position: relative;
     margin-left: 30px;
     margin-top: 30px;
     text-align: center;
@@ -711,4 +712,24 @@ img {
 }
 .item-icons-futer:last-child {
     margin-right: 0px;
+}
+
+.layers {
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.layers p {
+    font-weight: bold;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--wight-text-cl);
+    margin: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
