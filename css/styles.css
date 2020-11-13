@@ -319,6 +319,7 @@ img {
 
 .menu {
     display: inline-flex;
+    
 }
 
 .menu-link:not(:last-child) {
@@ -331,6 +332,7 @@ img {
     justify-content: flex-start;
     padding-top: 24px;
     padding-bottom: 25px;
+    position: relative;
 }
 
 .navigation .logo {
@@ -732,4 +734,17 @@ img {
     margin: 0px;
     padding-top: 27px;
     padding-bottom: 27px;
+}
+
+
+
+.menu-link:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-cl);
 }
