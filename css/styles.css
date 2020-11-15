@@ -15,6 +15,7 @@
     --bg-section-cl: #EEEEEE;
     --bg-futer-icons-link: rgba(255, 255, 255, 0.1);
     --icons-color: #AFB1B8;
+    --time-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* п.3 задаем базовые стили и потом проверяем работают ли */
 body{
@@ -55,7 +56,7 @@ img {
 .link{
     text-decoration: none;
     color: inherit;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--time-transition);
 }
 
 .link:hover,
@@ -68,6 +69,7 @@ img {
 .but-list .btn:hover,
 .btn:focus{
     background-color: var(--accent-cl);
+    cursor: pointer;
 }
 
 
@@ -177,7 +179,7 @@ img {
     padding: 0px;
     margin-right: 8px;
     border: 0px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--time-transition);
 }
 
 .text-but-portfolio {
@@ -193,7 +195,7 @@ img {
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--time-transition);
 }
 
 /* класс для ссылок по страницам в навигации*/
@@ -292,7 +294,7 @@ img {
     margin-right: 10px;
     background-size: contain;
     background-position: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+    transition: fill var(--time-transition);    
 }
 
 .smartphone-svg {
@@ -302,7 +304,7 @@ img {
     margin-right: 10px;
     background-size: contain;
     background-position: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+    transition: fill var(--time-transition);   
 }
 
 .link-connection:hover > .envelope-svg,
@@ -471,7 +473,7 @@ img {
     background: var(--wight-text-cl);
     border: 1px solid var(--bg-section-cl);
     box-sizing: border-box;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--time-transition);
     }
 
     /* для каждого третьего */
@@ -574,7 +576,7 @@ img {
     width: 20px;
     height: 20px;
     fill: var(--icons-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    transition: fill var(--time-transition);  
 
 }
 
@@ -599,7 +601,7 @@ img {
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    transition: background-color var(--time-transition);  
     
 }
 .futer-social .social-icons-border {
@@ -664,13 +666,13 @@ img {
     height: 90px;
     border: 1px solid var(--icons-color);
     border-radius: 4px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border var(--time-transition);
 }
 
 .item-logo {
     align-items: center;
     fill: var(--icons-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--time-transition);
 }
 
 .item-logo1 {
@@ -784,7 +786,7 @@ img {
     font-size: 18px;
     line-height: 1.56;
     transform: translateY(+100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--time-transition);
     text-align: left;
 }
 
